@@ -1,12 +1,10 @@
-let num = +prompt("Введите четырехзначное число");
-        alert(mul(num));
- 
-        function mul(num) {
-            if (num > 999 && num < 10000) {
-                let s = num.toString();
-                console.log (s[0]);
-                console.log (s[1]);
-                console.log (s[2]);
-                console.log (s[3]);
-            }
-        }
+let a = +prompt("Введите четырехзначное число");
+        alert(a);
+    n1 = a / 1000;
+    n2 = (a / 100) % 10;
+    n3 = (a % 100) / 10;
+    n4 = a % 10;
+console.log(Math.trunc(n1))
+console.log(Math.trunc(n2))
+console.log(Math.trunc(n3))
+console.log(Math.trunc(n4))
